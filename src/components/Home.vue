@@ -66,7 +66,7 @@ export default {
     uploadOnServer() {
       this.operation = true;
       const filename = this.testFile.name;
-      const file = filename.split(".txt")[0] + "_" + new Date().getTime();
+      const file = filename.split(".txt")[0];
       const ext = filename.slice(filename.lastIndexOf("."));
       firebase
         .storage()
